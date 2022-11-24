@@ -13,7 +13,7 @@ theme = "github-style"
   home = ["HTML"]
 
 [params]
-  author = "zccrs"
+  author = "JiDe"
   description = "..."
   github = "zccrs"
   twitter = "zccrs"
