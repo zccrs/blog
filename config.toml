@@ -1,4 +1,4 @@
-baseURL = "https://zccrs.github.io/"
+baseURL = "https://zcc.rs/"
 languageCode = "zh-cn"
 title = "Blog"
 theme = "github-style"
@@ -11,3 +11,25 @@ theme = "github-style"
 
 [outputs]
   home = ["HTML"]
+
+[params]
+  author = "zccrs"
+  description = "..."
+  github = "zccrs"
+  twitter = "zccrs"
+  email = "zccrs@live.com"
+  url = "https://zcc.rs"
+  keywords = "blog, google analytics"
+  lastmod = true
+  favicon = "/images/avatar.png"
+  location = "China"
+  userStatusEmoji = "😀"
+  enableGitalk = false
+
+  [[params.links]]
+    title = "justforlxz"
+    href = "https://blog.justforlxz.com/"
+    icon = "https://blog.justforlxz.com/img/avatar.png"
+
+[frontmatter]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
