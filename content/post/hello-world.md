@@ -1,6 +1,6 @@
 ---
-title: ""
-date: 2022-011-24T19:23:00+08:00
+title: "Hello Blog"
+date: 2022-11-24T19:23:00+08:00
 draft: false
 authors: ["JiDe Zhang"]
 tags: ["随笔"]
