@@ -69,3 +69,13 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+      - name: Deploy ssh key
+        uses: webfactory/ssh-agent@v0.6.0
+        with:
+          ssh-private-key: ${{ secrets.BLOG_DEPLOY_KEY }}
+      - name: Scan public keys
+        run: |
+          ssh-keyscan zcc.rs >> ~/.ssh/known_hosts
+      - name: Sync to vps
+        run: |
+          rsync -av --delete public root@zcc.rs:/root/Docker/caddy/data/blog
