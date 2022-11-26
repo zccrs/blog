@@ -49,9 +49,12 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
+          cp config.toml config_zccrs_com.toml
+          sed -i '/\[params.gitalk\]/a\${{ secrets.HUGO_CONFIG_ZCCRS_COM }}' config_zccrs_com.toml
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --config config_zccrs_com.toml
           echo "zccrs.com" > ./public/CNAME
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
@@ -64,9 +67,12 @@ jobs:
           HUGO_ENV: production
         run: |
           rm -rf ./public
+          cp config.toml config_zcc_rs.toml
+          sed -i '/\[params.gitalk\]/a\${{ secrets.HUGO_CONFIG_ZCC_RS }}' config_zcc_rs.toml
           hugo \
             --minify \
-            --baseURL "https://zcc.rs/"
+            --baseURL "https://zcc.rs/" \
+            --config config_zcc_rs.toml
       - name: Deploy ssh key
         uses: webfactory/ssh-agent@v0.6.0
         with:

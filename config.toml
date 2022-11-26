@@ -18,18 +18,32 @@ theme = "github-style"
   github = "zccrs"
   twitter = "zccrs"
   email = "zccrs@live.com"
-  url = "https://zcc.rs"
+  url = "https://zcc.rs/"
   keywords = "blog, google analytics"
   lastmod = true
   favicon = "/images/avatar.png"
   location = "China"
   userStatusEmoji = "😀"
-  enableGitalk = false
+  enableGitalk = true
 
-  [[params.links]]
-    title = "justforlxz"
-    href = "https://blog.justforlxz.com/"
-    icon = "https://blog.justforlxz.com/img/avatar.png"
+[[params.links]]
+  title = "justforlxz"
+  href = "https://blog.justforlxz.com/"
+  icon = "https://blog.justforlxz.com/img/avatar.png"
 
 [frontmatter]
   lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[params.gitalk]
+  repo = "blog" # 您的博客的github地址Repository name，例如：xxxx.github.io
+  owner = "zccrs" # 您的GitHub ID
+  admin = "zccrs" # 您的GitHub ID
+  id = "location.pathname" # 文章页面的链接地址就是ID
+  title = "document.title"
+  labels = "gitalk" # Github issue labels. If you used to use Gitment, you can change it
+  perPage = 30 # Pagination size, with maximum 100.
+  pagerDirection = "last" # Comment sorting direction, available values are 'last' and 'first'.
+  createIssueManually = true # 设置为true，如果是管理员登录，会自动创建issue，如果是false，需要管理员手动添加第一个评论(issue)
+  distractionFreeMode = false # Enable hot key (cmd|ctrl + enter) submit comment.
+  proxy = "https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token" # 可以自行添加反向代理
+  language = "[en, zh-CN, zh-TW]"
