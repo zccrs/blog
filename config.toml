@@ -25,6 +25,7 @@ theme = "github-style"
   location = "China"
   userStatusEmoji = "😀"
   enableGitalk = true
+  rss = true
 
 [[params.links]]
   title = "justforlxz"
