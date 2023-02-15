@@ -2,6 +2,7 @@
 title: "开发DDE的屏保"
 date: 2019-09-03T20:41:00+08:00
 draft: false
+authors: ["zccrs"]
 tags: ["deepin", "DDE"]
 ---
 

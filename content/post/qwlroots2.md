@@ -2,6 +2,7 @@
 title: "简化连接wl_signal的方式"
 date: 2022-11-25T21:07:00+08:00
 draft: false
+authors: ["zccrs"]
 tags: ["qwlroots"]
 ---
 
@@ -10,6 +11,8 @@ tags: ["qwlroots"]
 ```
 
 今天为 QWBackend 增加了对 wlr_backend 信号的绑定：https://github.com/vioken/qwlroots/pull/4
+
+<!--more-->
 
 但是连接一个 wl_signal 实在是太麻烦了，至少要三行代码。幸好之前在写 Waylib 时做了一个封装，现在可以跟连接Qt的信号一样连接一个 wl_signal🌈。
 
