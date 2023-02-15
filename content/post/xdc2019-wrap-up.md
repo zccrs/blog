@@ -9,7 +9,7 @@ tags: ["xdc", "翻译"]
 
 原文：https://emersion.fr/blog/2019/xdc2019-wrap-up
 
-# XDC 2019 wrap-up
+XDC 2019 wrap-up
 
  &gt; 2019-10-10
 

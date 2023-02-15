@@ -6,8 +6,6 @@ authors: ["zccrs"]
 tags: ["Bison", "Flex"]
 ---
 
-## 先介绍一下“五仁”语言的特性。
-
 * “五仁”官方名称：zScript
 * 变量使用关键字"var"进行声明，变量本身无类型
 
