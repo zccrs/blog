@@ -13,7 +13,7 @@ theme = "github-style"
   home = ["HTML"]
 
 [params]
-  author = "JiDe"
+  author = "zccrs"
   description = "..."
   github = "zccrs"
   twitter = "zccrs"
@@ -26,6 +26,7 @@ theme = "github-style"
   userStatusEmoji = "😀"
   enableGitalk = true
   rss = true
+  mainSections = ["posts"]
 
 [[params.links]]
   title = "justforlxz"
